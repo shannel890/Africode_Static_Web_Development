@@ -9,19 +9,19 @@
     <h1>Registration Form</h1>
     <form action="register.php" method="POST">
         <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="fname" required>
+        <input type="text" id="fname" name="fname" placeholder="shannel">
         <br></br>
         <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="lname"
+        <input type="text" id="lname" name="lname" placeholder="kirui"
         <br></br>
         <label for="Email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required placeholder="shannelkirui739@gmmail.com">
         <br></br>
         <label for="dbirth">DOB:</label>
-        <input type="date" id="dbirth" name="dbirth" required>
+        <input type="date" id="dbirth" name="dbirth" required name="trip start" max="2012-01-01">
         <br></br>
         <label for="pnumber">Phone Number:</label>
-        <input type="tel" name="pnumber" id="pnumber" required>
+        <input type="tel" name="pnumber" id="pnumber" required placeholder="eg.,[+254]706368540">
         <br></br>
         <label >Gender:</label>
         <input type="radio" name="Gender" id="male" value="male" required>
@@ -32,11 +32,11 @@
         <label for="subscribe">subscribe</label>
         <input type="checkbox" name="subscribe" id="subscribe">
         <br></br>
-        <label for="pphoto">uploaded image</label>
-        <input type="file" name="pphoto" id="pphoto">
+        <label for="pphoto">uploaded image[max 2 mb]</label>
+        <input type="file" name="pphoto" id="pphoto" accept="jpg.jpeg" max="2097152">
         <br></br>
         <label for="pass">password</label>
-        <input type="password" name="pass" id="pass">
+        <input type="password" name="pass" id="pass" required minlength="7" maxlength="12">
         <br>
         my color:-<input type="color"></input> <br></br>
         <label for="age">select age</label>
